@@ -46,4 +46,21 @@ class Owner
     @pets[:dogs].each {|p| p.mood = "happy"}
   end
 
+  def play_with_cats
+    @pets[:cats].each {|p| p.mood = "happy"}
+  end
+
+  def feed_fish
+    @pets[:fishes].each {|p| p.mood = "happy"}
+  end
+
+  def sell_pets
+    @pets[:dogs].each {|p| p.mood = "nervous"}
+    @pets[:fishes].each {|p| p.mood = "nervous"}
+    @pets[:cats].each {|p| p.mood = "nervous"}
+  end
+
+  def list_pets
+
+  end
 end
