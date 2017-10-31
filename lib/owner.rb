@@ -42,5 +42,5 @@ class Owner
     @pets[:dogs] << f
   end
 
-  
+
 end
