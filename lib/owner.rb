@@ -18,6 +18,7 @@ class Owner
     @@all
   end
 
+
   def self.count
     @@all.length
   end
@@ -25,4 +26,21 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+
+  def buy_fish(name)
+    f = Fish.new(name)
+    @pets[:fishes] << f
+  end
+
+  def buy_cat(name)
+    f = Cat.new(name)
+    @pets[:cats] << f
+  end
+
+  def buy_dog(name)
+    f = Dog.new(name)
+    @pets[:dogs] << f
+  end
+
+  
 end
