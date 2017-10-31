@@ -1,5 +1,5 @@
 class Fish
-  attr_accessor :name
+  attr_accessor :name, :mood
   def initialize(name)
     @name = name
   end
