@@ -7,8 +7,8 @@ attr_accessor :name
     @name = name
     @@all << self
   end
-end
 
-def all
-  @@all
+  def all
+    @@all
+  end
 end
